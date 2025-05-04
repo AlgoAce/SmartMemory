@@ -3,132 +3,34 @@
 
 ---
 
-<div id="english">
-
-# AI Agent Knowledge Management System
-
-A Python-based backend for managing user knowledge and memory using a network of AI agents, without relying on RAG (Retrieval-Augmented Generation). Agents communicate via Google’s agent-to-agent protocol and interact through a Neo4j-powered social graph.
-
-## Table of Contents
-
-- [AI Agent Knowledge Management System](#ai-agent-knowledge-management-system)
-  - [Table of Contents](#table-of-contents)
-  - [Overview](#overview)
-  - [Architecture](#architecture)
-  - [Features](#features)
-  - [Directory Structure](#directory-structure)
-  - [Installation](#installation)
-  - [Configuration](#configuration)
-  - [Usage](#usage)
-  - [Neo4j Integration](#neo4j-integration)
-  - [Contributing](#contributing)
-  - [License](#license)
-- [AI 智能体知识管理系统](#ai-智能体知识管理系统)
-  - [目录](#目录)
-  - [概述](#概述)
-  - [架构](#架构)
-  - [功能](#功能)
-  - [目录结构](#目录结构)
-  - [安装](#安装)
-  - [配置](#配置)
-  - [使用](#使用)
-  - [Neo4j 集成](#neo4j-集成)
-  - [贡献](#贡献)
-  - [许可证](#许可证)
-  - [Contributors / 贡献者](#contributors--贡献者)
-
-
-## Overview
-
-This project simulates a virtual company of intelligent agents, each with skills and memories. Agents collaborate by passing tasks among themselves to fulfill user queries, manage memories, and maintain relationships, all without RAG techniques. The inter-agent network is stored and queried in Neo4j to model a social graph.
-
-## Architecture
-
-1. **Agent Network**: Each agent is a node in a Neo4j graph, connected by relationships that represent communication links and memory referrals.
-2. **Agent-to-Agent Protocol**: Agents send `TaskEvent`s to one another using Google’s standard protocol for agent communication.
-3. **Task Management**: A `TaskManager` observes and coordinates task flow, handling submission, delegation, and responses.
-4. **Memory Management**: Specialized `MemoryAgent`s store and retrieve `Memory` objects, tracking access patterns.
-5. **Skill Abstraction**: Agents expose capabilities via `Skill` objects, listing supported input/output modes and example prompts.
-
-## Features
-
-- Pure LLM-based knowledge extraction and reasoning
-- Agent-to-agent communication without embeddings or RAG
-- Neo4j-based social graph for dynamic agent relationships
-- Modular class design for extensibility
-- Detailed logging of tasks and memory accesses
-
-
-## Directory Structure
-
-```plaintext
-your_project/
-├── app.py                # Flask/FastAPI entry point
-├── requirements.txt      # Python dependencies
-├── backend/              # Core application packages
-│   ├── agents/           # Agent base and subclasses
-│   ├── tasks/            # TaskManager, TaskEvent, TaskStatus
-│   ├── memory/           # MemoryAgent, Memory
-│   ├── graph/            # GraphBuilder (Neo4j integration)
-│   └── llm/              # LLM interface
-├── tests/                # Unit tests
-└── docs/                 # Documentation
-```
-
-## Installation
-
-1. Clone the repository:
-   ```bash
-   git clone https://github.com/your_org/agent-knowledge-system.git
-   cd agent-knowledge-system
-   ```
-2. Create a virtual environment and install dependencies:
-   ```bash
-   python3 -m venv venv
-   source venv/bin/activate
-   pip install -r requirements.txt
-   ```
-
-## Configuration
-
-1. **Neo4j**: Ensure a running Neo4j instance. Configure `NEO4J_URI`, `NEO4J_USER`, and `NEO4J_PASSWORD` in environment variables or `config.yml`.
-2. **OpenAI API**: Set `OPENAI_API_KEY` for LLM access.
-
-## Usage
-
-```bash
-# Start the backend
-python app.py
-```
-
-- The REST API exposes endpoints to submit user queries, inspect agent relations, and view task logs.
-
-## Neo4j Integration
-
-The `GraphBuilder` module handles:
-
-- Connecting to Neo4j via Bolt protocol
-- Creating agent nodes and `:KNOWS` relationships
-- Querying for pathways between agents when delegating tasks
-
-## Contributing
-
-1. Fork the repository
-2. Create a feature branch
-3. Write tests for new functionality
-4. Submit a pull request
-
-## License
-
-This project is licensed under the MIT License.
-
-</div>
-
 <div id="中文">
 
-# AI 智能体知识管理系统
-
+# Smart Memory
 基于 Python 的后端，使用一系列智能体网络来管理用户的知识和记忆，完全不依赖 RAG（检索增强生成）。各智能体通过 Google 的 agent-to-agent 协议通信，并基于 Neo4j 构建社交图进行交互。
+
+<p align="center">
+    <img src="https://img.shields.io/badge/PureLLM-supported-brightgreen.svg?style=flat" /></a></a>
+    <img src="https://img.shields.io/badge/Neo4j-enabled-orange.svg?style=flat" /></a></a>
+    <img src="https://img.shields.io/badge/AgentToAgent-enabled-violet.svg?style=flat" /></a></a>
+    <img src="https://img.shields.io/badge/python-3.8%2B-blue.svg?style=flat" /></a></a>
+    <img src="https://img.shields.io/badge/license-MIT-blue.svg?label=License&style=flat" /></a>
+    </br>
+    <img src="https://img.shields.io/badge/welcome-brightgreen.svg?style=flat" /></a></a>
+    <img src="https://img.shields.io/badge/to-red.svg?style=flat" /></a></a>
+    <img src="https://img.shields.io/badge/our-blue.svg?style=flat" /></a></a>
+    <img src="https://img.shields.io/badge/family-black.svg?style=flat" /></a></a>
+</p>
+
+
+<h1 align="center">
+  <br>
+  <img src="./img/poster.png" width="800">
+  <br>
+</h1>
+
+
+
+
 
 ## 目录
 
@@ -172,6 +74,7 @@ your_project/
 ├── requirements.txt      # Python 依赖清单
 ├── backend/              # 核心应用包
 │   ├── agents/           # 智能体基类及子类
+|   ├── skills/           # 技能
 │   ├── tasks/            # TaskManager, TaskEvent, TaskStatus
 │   ├── memory/           # MemoryAgent, Memory
 │   ├── graph/            # GraphBuilder (Neo4j 集成)
@@ -226,6 +129,105 @@ python app.py
 ## 许可证
 
 本项目基于 MIT 许可证。
+
+</div>
+
+
+<div id="english">
+
+# Smart Memory
+
+
+<img src = './img/poster.png'>
+
+
+A Python-based backend for managing user knowledge and memory using a network of AI agents, without relying on RAG (Retrieval-Augmented Generation). Agents communicate via Google’s agent-to-agent protocol and interact through a Neo4j-powered social graph.
+
+
+## Overview
+
+This project simulates a virtual company of intelligent agents, each with skills and memories. Agents collaborate by passing tasks among themselves to fulfill user queries, manage memories, and maintain relationships, all without RAG techniques. The inter-agent network is stored and queried in Neo4j to model a social graph.
+
+## Architecture
+
+1. **Agent Network**: Each agent is a node in a Neo4j graph, connected by relationships that represent communication links and memory referrals.
+2. **Agent-to-Agent Protocol**: Agents send `TaskEvent`s to one another using Google’s standard protocol for agent communication.
+3. **Task Management**: A `TaskManager` observes and coordinates task flow, handling submission, delegation, and responses.
+4. **Memory Management**: Specialized `MemoryAgent`s store and retrieve `Memory` objects, tracking access patterns.
+5. **Skill Abstraction**: Agents expose capabilities via `Skill` objects, listing supported input/output modes and example prompts.
+
+## Features
+
+- Pure LLM-based knowledge extraction and reasoning
+- Agent-to-agent communication without embeddings or RAG
+- Neo4j-based social graph for dynamic agent relationships
+- Modular class design for extensibility
+- Detailed logging of tasks and memory accesses
+
+
+## Directory Structure
+
+```plaintext
+your_project/
+├── app.py                # Flask/FastAPI entry point
+├── requirements.txt      # Python dependencies
+├── backend/              # Core application packages
+│   ├── agents/           # Agent base and subclasses
+|   ├── skills/           # skills for agent
+│   ├── tasks/            # TaskManager, TaskEvent, TaskStatus
+│   ├── memory/           # MemoryAgent, Memory
+│   ├── graph/            # GraphBuilder (Neo4j integration)
+│   └── llm/              # LLM interface
+├── tests/                # Unit tests
+└── docs/                 # Documentation
+```
+
+## Installation
+
+1. Clone the repository:
+   ```bash
+   git clone https://github.com/your_org/agent-knowledge-system.git
+   cd agent-knowledge-system
+   ```
+2. Create a virtual environment and install dependencies:
+   ```bash
+   python3 -m venv venv
+   source venv/bin/activate
+   pip install -r requirements.txt
+   ```
+
+## Configuration
+
+1. **Neo4j**: Ensure a running Neo4j instance. Configure `NEO4J_URI`, `NEO4J_USER`, and `NEO4J_PASSWORD` in environment variables or `config.yml`.
+2. **OpenAI API**: Set `OPENAI_API_KEY` for LLM access.
+
+## Usage
+
+```bash
+# Start the backend
+python app.py
+```
+
+- The REST API exposes endpoints to submit user queries, inspect agent relations, and view task logs.
+
+## Neo4j Integration
+
+The `GraphBuilder` module handles:
+
+- Connecting to Neo4j via Bolt protocol
+- Creating agent nodes and `:KNOWS` relationships
+- Querying for pathways between agents when delegating tasks
+
+## Contributing
+
+1. Fork the repository
+2. Create a feature branch
+3. Write tests for new functionality
+4. Submit a pull request
+
+## License
+
+This project is licensed under the MIT License.
 
 </div>
 
