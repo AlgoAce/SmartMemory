@@ -240,7 +240,7 @@ This project is licensed under the MIT License.
           Bochen Dong
         </a>
         <br>
-        <sub><sup>Team Member</sup></sub>
+        <sub><sup>Team Leader</sup></sub>
       </td>
       <td align="center" valign="middle" width="128">
         <a href="https://github.com/VGLALALA">
@@ -248,7 +248,7 @@ This project is licensed under the MIT License.
           Sting Zhang
         </a>
         <br>
-        <sub><sup>Team Leader</sup></sub>
+        <sub><sup>Team Member</sup></sub>
       </td>
       <td align="center" valign="middle" width="128">
          <a href="https://github.com/nancyzhao1">
@@ -264,7 +264,7 @@ This project is licensed under the MIT License.
           Abel Chen
         </a>
         <br>
-        <sub><sup>Team Member</sup></sub>
+        <sub><sup>Team Leader</sup></sub>
       </td>
      
      
