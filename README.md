@@ -37,6 +37,7 @@ A Python-based backend for managing user knowledge and memory using a network of
   - [许可证](#许可证)
   - [Contributors / 贡献者](#contributors--贡献者)
 
+
 ## Overview
 
 This project simulates a virtual company of intelligent agents, each with skills and memories. Agents collaborate by passing tasks among themselves to fulfill user queries, manage memories, and maintain relationships, all without RAG techniques. The inter-agent network is stored and queried in Neo4j to model a social graph.
