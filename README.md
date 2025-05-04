@@ -266,14 +266,6 @@ This project is licensed under the MIT License.
         <br>
         <sub><sup>Team Member</sup></sub>
       </td>
-      <td align="center" valign="middle" width="128">
-         <a href="https://github.com/phoenixxxxxxx77">
-          <img src="https://github.com/phoenixxxxxxx77.png?size=128" />
-          Place Holder
-        </a>
-        <br>
-        <sub><sup>Team Member</sup></sub>
-      </td>
      <td align="center" valign="middle" width="128">
          <a href="https://github.com/phoenixxxxxxx77">
           <img src="https://github.com/phoenixxxxxxx77.png?size=128" />
