@@ -243,6 +243,14 @@ This project is licensed under the MIT License.
         <sub><sup>Team Leader</sup></sub>
       </td>
       <td align="center" valign="middle" width="128">
+         <a href="https://github.com/Tabel0112">
+          <img src="https://github.com/Tabel0112.png?size=128" />
+          Abel Chen
+        </a>
+        <br>
+        <sub><sup>Team Leader</sup></sub>
+      </td>
+      <td align="center" valign="middle" width="128">
         <a href="https://github.com/VGLALALA">
           <img src="https://github.com/VGLALALA.png?size=128" />
           Sting Zhang
@@ -259,14 +267,38 @@ This project is licensed under the MIT License.
         <sub><sup>Team Member</sup></sub>
       </td>
       <td align="center" valign="middle" width="128">
-         <a href="https://github.com/Tabel0112">
-          <img src="https://github.com/Tabel0112.png?size=128" />
-          Abel Chen
+         <a href="https://github.com/phoenixxxxxxx77">
+          <img src="https://github.com/phoenixxxxxxx77.png?size=128" />
+          Place Holder
         </a>
         <br>
-        <sub><sup>Team Leader</sup></sub>
+        <sub><sup>Team Member</sup></sub>
       </td>
-     
+     <td align="center" valign="middle" width="128">
+         <a href="https://github.com/phoenixxxxxxx77">
+          <img src="https://github.com/phoenixxxxxxx77.png?size=128" />
+          Yasmin yin
+        </a>
+        <br>
+        <sub><sup>Team Member</sup></sub>
+      </td>
+      <td align="center" valign="middle" width="128">
+         <a href="https://github.com/Superb-947">
+          <img src="https://github.com/Superb-947.png?size=128" />
+          Yolo Jiang
+        </a>
+        <br>
+        <sub><sup>Team Member</sup></sub>
+      </td>
+      <td align="center" valign="middle" width="128">
+         <a href="https://github.com/BoyuSong">
+          <img src="https://github.com/BoyuSong.png?size=128" />
+          Boyu Song
+        </a>
+        <br>
+        <sub><sup>Team Member</sup></sub>
+      </td>
+
      
   </tbody>
 </table>
