@@ -20,10 +20,7 @@
     <img src="https://img.shields.io/badge/our-blue.svg?style=flat" /></a></a>
     <img src="https://img.shields.io/badge/family-black.svg?style=flat" /></a></a>
 </p>
-
-
 <h1 align="center">
-  <br>
   <img src="./img/poster.png" width="800">
   <br>
 </h1>
