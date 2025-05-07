@@ -283,8 +283,8 @@ This project is licensed under the MIT License.
         <sub><sup>Team Member</sup></sub>
       </td>
       <td align="center" valign="middle" width="128">
-         <a href="https://github.com/BoyuSong">
-          <img src="https://github.com/BoyuSong.png?size=128" />
+         <a href="https://github.com/liyouyan0525">
+          <img src="https://github.com/liyouyan0525.png?size=128" />
           Boyu Song
         </a>
         <br>
