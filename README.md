@@ -285,7 +285,7 @@ This project is licensed under the MIT License.
       <td align="center" valign="middle" width="128">
          <a href="https://github.com/liyouyan0525">
           <img src="https://github.com/liyouyan0525.png?size=128" />
-          Boyu Song
+          Liyou Yan
         </a>
         <br>
         <sub><sup>Team Member</sup></sub>
